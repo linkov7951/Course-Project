@@ -29,31 +29,31 @@
 ## 📁 Структура репозитория
 
 
-Course-Project/
-│
-├── 📁 code/                         # Исходный код на Python
-│   ├── chapter1_table.py            # Анализ табличных данных
-│   ├── chapter2_timeseries.py       # Анализ временных рядов
-│   ├── chapter3_images.py           # Анализ изображений
-│   └── chapter4_text.py             # Анализ текстовых данных
-│
-├── 📁 data/                         # Данные (файлы не загружены)
-│   ├── table/                       # Credit Card Fraud Detection
-│   ├── timeseries/                  # NVIDIA Stock Prices
-│   ├── images/                      # Hard Hat Workers Dataset
-│   └── text/                        # Обращения граждан
-│
-├── 📁 results/                      # Результаты анализа
-│   ├── fig1_*.png                   # Рисунки главы 1
-│   ├── fig2_*.png                   # Рисунки главы 2
-│   ├── fig3_*.png                   # Рисунки главы 3
-│   └── fig4_*.png                   # Рисунки главы 4
-│
-├── 📁 docs/                         # Документация
-│   └── Отчет_курсовая_работа.docx   # Полный отчет
-│
-├── .gitignore                       # Игнорируемые файлы
-└── README.md                        # Описание проекта
+Course-Project/<br>
+│<br>
+├── 📁 code/                         # Исходный код на Python<br>
+│   ├── chapter1_table.py            # Анализ табличных данных<br>
+│   ├── chapter2_timeseries.py       # Анализ временных рядов<br>
+│   ├── chapter3_images.py           # Анализ изображений<br>
+│   └── chapter4_text.py             # Анализ текстовых данных<br>
+│<br>
+├── 📁 data/                         # Данные (файлы не загружены)<br>
+│   ├── table/                       # Credit Card Fraud Detection<br>
+│   ├── timeseries/                  # NVIDIA Stock Prices<br>
+│   ├── images/                      # Hard Hat Workers Dataset<br>
+│   └── text/                        # Обращения граждан<br>
+│<br>
+├── 📁 results/                      # Результаты анализа<br>
+│   ├── fig1_*.png                   # Рисунки главы 1<br>
+│   ├── fig2_*.png                   # Рисунки главы 2<br>
+│   ├── fig3_*.png                   # Рисунки главы 3<br>
+│   └── fig4_*.png                   # Рисунки главы 4<br>
+│<br>
+├── 📁 docs/                         # Документация<br>
+│   └── Отчет_курсовая_работа.docx   # Полный отчет<br>
+│<br>
+├── .gitignore                       # Игнорируемые файлы<br>
+└── README.md                        # Описание проекта<br>
 
 
 ---
