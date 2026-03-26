@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+
+# Результаты
+results/
+*.png
+*.jpg
+*.html
+
+# Данные (большие файлы)
+data/table/creditcard.csv
+data/images/train/
+data/images/test/
+data/images/*.png
+
+# IDE
+.vscode/
+.idea/
+
+# Системные
+.DS_Store
+Thumbs.db
+
+# Виртуальное окружение
+venv/
+.venv/
