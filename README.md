@@ -1,11 +1,10 @@
-markdown
-# Курсовой проект: Поиск и первичный анализ наборов данных
+# 🎓 Курсовой проект: Поиск и первичный анализ наборов данных
 
 <div align="center">
 
-![Python](https://img.shields.io/badge/Python-3.9+-blue?logo=python)
-![License](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey)
-![GitHub](https://img.shields.io/badge/GitHub-Repository-black?logo=github)
+![Python](https://img.shields.io/badge/Python-3.9+-blue?logo=python&style=for-the-badge)
+![License](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey?style=for-the-badge)
+![GitHub](https://img.shields.io/badge/GitHub-Repository-black?logo=github&style=for-the-badge)
 
 **Студент:** Линьков Андрей Дмитриевич | **Группа:** ЕТ-141 | **Преподаватель:** Краева Яна Александровна
 
@@ -19,11 +18,11 @@ markdown
 
 | № | Тип данных | Задача | Датасет |
 |---|------------|--------|---------|
-| 1 | **Табличные данные** | Обнаружение мошеннических транзакций | Credit Card Fraud Detection |
-| 2 | **Временные ряды** | Прогнозирование цен акций | NVIDIA Daily Stock Prices |
-| 3 | **Изображения** | Классификация защитных касок | Hard Hat Workers Dataset |
-| 4 | **Текстовые данные** | Анализ обращений граждан | Обращения граждан (синтетический) |
-| 5 | **Аудиоданные** | *(будет добавлен в следующей версии)* | — |
+| 1 | **📊 Табличные данные** | Обнаружение мошеннических транзакций | Credit Card Fraud Detection |
+| 2 | **📈 Временные ряды** | Прогнозирование цен акций | NVIDIA Daily Stock Prices |
+| 3 | **🖼️ Изображения** | Классификация защитных касок | Hard Hat Workers Dataset |
+| 4 | **📝 Текстовые данные** | Анализ обращений граждан | Обращения граждан (синтетический) |
+| 5 | **🎵 Аудиоданные** | *(будет добавлен в следующей версии)* | — |
 
 ---
 
@@ -58,31 +57,58 @@ text
 
 ---
 
-## 🚀 Быстрый старт
+## 🚀 Как запустить код
 
-### 1. Установка Python
+### 1️⃣ Установка Python
 
-Скачайте и установите **Python 3.9** или новее с [официального сайта](https://www.python.org/downloads/)
+<div align="center">
+  
+| Шаг | Действие |
+|-----|----------|
+| 1 | Перейдите на [официальный сайт Python](https://www.python.org/downloads/) |
+| 2 | Скачайте установщик для Windows |
+| 3 | Запустите установку, **обязательно** отметьте "Add Python to PATH" |
 
-### 2. Установка библиотек
+</div>
+
+---
+
+### 2️⃣ Установка библиотек
+
+Откройте **командную строку** (Win+R → cmd) и выполните команду:
 
 ```bash
 pip install pandas numpy matplotlib seaborn scipy statsmodels opencv-python scikit-learn plotly pymorphy3 wordcloud
-3. Скачивание данных
-Тип данных	Источник	Действие
-Табличные	Kaggle	Скачать creditcard.csv → data/table/
-Временные ряды	Yahoo Finance	Период 2016-2026 → Download → data/timeseries/
-Изображения	Собственный датасет	Разложить по папкам train/helmet/, train/no_helmet/, test/helmet/, test/no_helmet/
-Текстовые	Создается автоматически	Код chapter4_text.py создаст файл data/text/appeals.csv
-4. Запуск анализа
+<details> <summary><b>📦 Подробнее о библиотеках</b> (нажмите, чтобы развернуть)</summary>
+Библиотека	Назначение
+pandas, numpy	Работа с данными
+matplotlib, seaborn	Построение графиков
+scikit-learn	Машинное обучение, TF-IDF
+statsmodels	Анализ временных рядов
+opencv-python, PIL	Обработка изображений
+pymorphy3	Лемматизация русского текста
+wordcloud	Облако слов
+plotly	Интерактивные графики
+</details>
+3️⃣ Скачивание данных
+<div align="center">
+Тип данных	Источник	📥 Инструкция
+📊 Табличные	Kaggle	Скачать creditcard.csv → data/table/
+📈 Временные ряды	Yahoo Finance	Период 2016-2026 → Download → data/timeseries/
+🖼️ Изображения	Собственный датасет	Разложить по папкам: train/helmet/, train/no_helmet/, test/helmet/, test/no_helmet/
+📝 Текстовые	Создается автоматически	Код chapter4_text.py сам создаст файл data/text/appeals.csv
+</div>
+4️⃣ Запуск анализа
 bash
-cd D:/2 семестр/курсач/code
+# Перейдите в папку с кодом
+cd D:\2 семестр\курсач\code
 
+# Запустите анализ по главам
 python chapter1_table.py
 python chapter2_timeseries.py
 python chapter3_images.py
 python chapter4_text.py
-5. Результаты
+5️⃣ Результаты
 Все рисунки и графики сохраняются в папку results/
 
 📊 Результаты анализа
@@ -115,33 +141,39 @@ SNR	23.26 дБ (отлично)
 Максимальная похожесть поиска	0.63
 </details>
 📚 Источники данных
+<div align="center">
 Датасет	Ссылка
-Credit Card Fraud Detection	Kaggle
-NVIDIA Daily Stock Prices	Yahoo Finance
-Hard Hat Workers Dataset	Roboflow
+Credit Card Fraud Detection	🔗 Kaggle
+NVIDIA Daily Stock Prices	🔗 Yahoo Finance
+Hard Hat Workers Dataset	🔗 Roboflow
 Обращения граждан	Синтетический датасет (создан в коде)
+</div>
 📖 Использованные библиотеки
-Библиотека	Назначение
-pandas	Загрузка и обработка данных
-numpy	Численные вычисления
-matplotlib, seaborn	Визуализация
-scikit-learn	Машинное обучение, TF-IDF
-statsmodels	Анализ временных рядов
-opencv-python, PIL	Работа с изображениями
-pymorphy3	Лемматизация русского текста
-wordcloud	Облако слов
-plotly	Интерактивные графики
+<div align="center">
+Библиотека	Назначение	Библиотека	Назначение
+pandas	Обработка данных	numpy	Численные вычисления
+matplotlib	Визуализация	seaborn	Статистические графики
+scikit-learn	ML, TF-IDF	statsmodels	Временные ряды
+opencv-python	Изображения	PIL	Работа с изображениями
+pymorphy3	Лемматизация	wordcloud	Облако слов
+plotly	Интерактивные графики		
+</div>
 🔗 Ссылки
-Репозиторий на GitHub
-
-Отчет по курсовой работе
-
-👨‍💻 Автор
+Ссылка	Описание
+GitHub Репозиторий	Исходный код проекта
+Отчет по курсовой работе	Полная документация
+👨‍💻 Об авторе
+<div align="center">
 Поле	Значение
 Студент	Линьков Андрей Дмитриевич
 Группа	ЕТ-141
 Университет	Южно-Уральский государственный университет (НИУ)
 Центр	ВиртУм
 GitHub	@linkov7951
+</div>
 📄 Лицензия
-Данный проект выполнен в учебных целях. Использованные датасеты распространяются под лицензиями CC BY-NC 4.0 и Open Database License.
+<div align="center">
+Данный проект выполнен в учебных целях.
+Использованные датасеты распространяются под лицензиями CC BY-NC 4.0 и Open Database License.
+
+</div> ```
